@@ -2,8 +2,8 @@
 #This script displays:
 #The content of the current directory In a list format
 #Where only the part of the name after the first dash is displayed
-content="$(ls -a)"
+content=$(ls)
 for i in content
 do
-    echo $content
+    echo "$content" | cut -d "-" -f2
 done
