@@ -1,0 +1,168 @@
+[34m
+* Datadog Agent 7 install script v1.16.0
+[0m
+[34m
+* Installing apt-transport-https, curl and gnupg
+[0m
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [599 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [170 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [14.5 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [251 kB]
+Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [36.9 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [604 B]
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [903 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [186 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [18.8 kB]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [383 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [35.3 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [8452 B]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [468 B]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [40.9 kB]
+Get:19 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [10.2 kB]
+Get:20 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [22.2 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [15.0 kB]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [548 B]
+Get:24 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [111 kB]
+Get:25 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [9808 B]
+Get:26 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [250 kB]
+Get:27 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [36.6 kB]
+Get:28 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [604 B]
+Get:29 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [724 kB]
+Get:30 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [126 kB]
+Get:31 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [14.4 kB]
+Get:32 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [30.2 kB]
+Get:33 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [5828 B]
+Get:34 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [252 B]
+Fetched 4342 kB in 7s (635 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+gnupg is already the newest version (2.2.27-3ubuntu2.1).
+gnupg set to manually installed.
+The following NEW packages will be installed:
+  apt-transport-https
+The following packages will be upgraded:
+  curl libcurl4
+2 upgraded, 1 newly installed, 0 to remove and 104 not upgraded.
+Need to get 486 kB of archives.
+After this operation, 175 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 apt-transport-https all 2.4.9 [1510 B]
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.10 [194 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.10 [290 kB]
+Fetched 486 kB in 1s (370 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58114 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_2.4.9_all.deb ...
+Unpacking apt-transport-https (2.4.9) ...
+Preparing to unpack .../curl_7.81.0-1ubuntu1.10_amd64.deb ...
+Unpacking curl (7.81.0-1ubuntu1.10) over (7.81.0-1ubuntu1.7) ...
+Preparing to unpack .../libcurl4_7.81.0-1ubuntu1.10_amd64.deb ...
+Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.10) over (7.81.0-1ubuntu1.7) ...
+Setting up apt-transport-https (2.4.9) ...
+Setting up libcurl4:amd64 (7.81.0-1ubuntu1.10) ...
+Setting up curl (7.81.0-1ubuntu1.10) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+[34m
+* Installing APT package sources for Datadog
+[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0   5164      0  0:00:01  0:00:01 --:--:--  5166100  6226  100  6226    0     0   5163      0  0:00:01  0:00:01 --:--:--  5166
+gpg: directory '/root/.gnupg' created
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key 32637D44F14F620E: public key "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0   5525      0  0:00:01  0:00:01 --:--:--  5529100  6226  100  6226    0     0   5524      0  0:00:01  0:00:01 --:--:--  5529
+gpg: key 32637D44F14F620E: "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  9001  100  9001    0     0   7610      0  0:00:01  0:00:01 --:--:--  7615100  9001  100  9001    0     0   7609      0  0:00:01  0:00:01 --:--:--  7615
+gpg: key D3A80E30382E94DE: public key "Datadog, Inc <package@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+[34m
+* Installing the Datadog Agent package
+[0m
+Ign:1 https://apt.datadoghq.com stable InRelease
+Get:2 https://apt.datadoghq.com stable Release [14.3 kB]
+Get:3 https://apt.datadoghq.com stable Release.gpg [801 B]
+Get:4 https://apt.datadoghq.com stable/7 all Packages [964 B]
+Get:5 https://apt.datadoghq.com stable/7 amd64 Packages [35.6 kB]
+Fetched 51.6 kB in 1s (44.2 kB/s)
+Reading package lists...
+  [33mInstalling package(s): datadog-agent datadog-signing-keys
+[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  datadog-agent datadog-signing-keys
+0 upgraded, 2 newly installed, 0 to remove and 104 not upgraded.
+Need to get 356 MB of archives.
+After this operation, 1103 MB of additional disk space will be used.
+Get:1 https://apt.datadoghq.com stable/7 amd64 datadog-agent amd64 1:7.44.1-1 [356 MB]
+Get:2 https://apt.datadoghq.com stable/7 amd64 datadog-signing-keys all 1:1.2.0-1 [21.0 kB]
+Fetched 356 MB in 2min 38s (2250 kB/s)
+Selecting previously unselected package datadog-agent.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58118 files and directories currently installed.)
+Preparing to unpack .../datadog-agent_1%3a7.44.1-1_amd64.deb ...
+Unpacking datadog-agent (1:7.44.1-1) ...
+Selecting previously unselected package datadog-signing-keys.
+Preparing to unpack .../datadog-signing-keys_1%3a1.2.0-1_all.deb ...
+Unpacking datadog-signing-keys (1:1.2.0-1) ...
+Setting up datadog-agent (1:7.44.1-1) ...
+Creating dd-agent group
+Creating dd-agent user
+Enabling service datadog-agent
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent.service → /lib/systemd/system/datadog-agent.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-process.service → /lib/systemd/system/datadog-agent-process.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-trace.service → /lib/systemd/system/datadog-agent-trace.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-security.service → /lib/systemd/system/datadog-agent-security.service.
+No datadog.yaml file detected, not starting the agent
+Setting up datadog-signing-keys (1:1.2.0-1) ...
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
+[34m
+* Adding your API key to the Datadog Agent configuration: /etc/datadog-agent/datadog.yaml
+[0m
+[34m
+* Setting SITE in the Datadog Agent configuration: /etc/datadog-agent/datadog.yaml
+[0m
+[34m* Starting the Datadog Agent...
+[0m
+Restarting Datadog Agent
+ * Stopping Datadog Agent datadog-agent
+   ...done.
+ * Stopping Datadog Process Agent datadog-agent-process
+   ...done.
+ * Stopping Datadog Trace Agent (APM) datadog-agent-trace
+   ...done.
+/etc/datadog-agent/security-agent.yaml not found. Exiting datadog-agent-security
+ * Starting Datadog Agent datadog-agent
+   ...done.
+ * Starting Datadog Process Agent datadog-agent-process
+   ...done.
+ * Starting Datadog Trace Agent (APM) datadog-agent-trace
+   ...fail!
+/etc/datadog-agent/security-agent.yaml not found. Exiting datadog-agent-security
+[32m  Your Datadog Agent is running and functioning properly.
+[0m[32m  It will continue to run in the background and submit metrics to Datadog.
+[0m[32m  If you ever want to stop the Datadog Agent, run:
+  
+      sudo service datadog-agent stop
+  
+  And to run it again run:
+  
+      sudo service datadog-agent start[0m
+
